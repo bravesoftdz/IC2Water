@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="4.9.32" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="40812.7179528357" ReportOptions.Description.Text="" ReportOptions.LastChange="40812.7262720602" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." PropData="044C65667403780103546F700350010844617461736574730100095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Orientation="poLandscape" PaperWidth="257" PaperHeight="182" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" Height="56.69295" Left="0" Top="18.89765" Width="895.74861">
+      <TfrxMemoView Name="Memo1" Left="370.17347" Top="5.22047" Width="166.29932" Height="37.7953" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="微软雅黑" Font.Style="1" ParentFont="False" Text="职务补贴信息"/>
+    </TfrxReportTitle>
+    <TfrxPageHeader Name="PageHeader1" Height="26.45669291" Left="0" Top="98.26778" Width="895.74861">
+      <TfrxMemoView Name="Memo2" Left="1" Top="0" Width="102.04724409" Height="26.45669291" ShowHint="False" Color="-16777216" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="编号"/>
+      <TfrxMemoView Name="Memo4" Left="205.33066228" Top="0" Width="75.59055118" Height="26.45669291" ShowHint="False" Color="-16777216" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="补贴数"/>
+      <TfrxMemoView Name="Memo5" Left="103.11039" Top="0" Width="102.04724409" Height="26.45669291" ShowHint="False" Color="-16777216" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="卡号"/>
+      <TfrxMemoView Name="Memo6" Left="337.73253" Top="0" Width="132.28346457" Height="26.45669291" ShowHint="False" Color="-16777216" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="生成时间"/>
+      <TfrxMemoView Name="Memo7" Left="537.06339" Top="0" Width="49.88976378" Height="26.45669291" ShowHint="False" Color="-16777216" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="机号"/>
+      <TfrxMemoView Name="Memo9" Left="762.58318" Top="0" Width="132.28346457" Height="26.45669291" ShowHint="False" Color="-16777216" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="入库日期"/>
+      <TfrxMemoView Name="Memo11" Left="281.48031496" Top="0" Width="56.69291339" Height="26.45669291" ShowHint="False" Color="-16777216" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="职务"/>
+      <TfrxMemoView Name="Memo8" Left="686.96104" Top="0" Width="75.59055118" Height="26.45669291" ShowHint="False" Color="-16777216" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="操作员"/>
+    </TfrxPageHeader>
+    <TfrxPageFooter Name="PageFooter1" Height="22.67718" Left="0" Top="268.34663" Width="895.74861">
+      <TfrxMemoView Name="Memo3" Left="801.26036" Top="0" Width="94.48825" Height="22.67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[Page#]"/>
+    </TfrxPageFooter>
+    <TfrxMasterData Name="MasterData1" Height="22.67716535" Left="0" Top="185.19697" Width="895.74861" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" RowCount="0">
+      <TfrxMemoView Name="BH" Left="1" Top="0" Width="102.04724409" Height="22.67716535" ShowHint="False" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="KH" Left="103.55113472" Top="0" Width="101.29133858" Height="22.67716535" ShowHint="False" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="SF_YE" Left="205.36220472" Top="0" Width="75.5905511811024" Height="22.67716535" ShowHint="False" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="SYCS" Left="280.70869559" Top="0" Width="56.69291339" Height="22.67716535" ShowHint="False" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="SFRQ" Left="337.41741559" Top="0" Width="132.28346457" Height="22.67716535" ShowHint="False" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="JYNO" Left="537.70096559" Top="0" Width="49.13385827" Height="22.67716535" ShowHint="False" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="CZY" Left="687.07916" Top="0" Width="75.59055118" Height="22.67716535" ShowHint="False" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="SCRQ" Left="763.00835" Top="0" Width="132.28346457" Height="22.67716535" ShowHint="False" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

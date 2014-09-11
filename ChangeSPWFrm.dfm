@@ -1,0 +1,130 @@
+object ChangeSPWForm: TChangeSPWForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = #20462#25913#36229#32423#26435#38480#23494#30721
+  ClientHeight = 141
+  ClientWidth = 284
+  Color = clInactiveCaptionText
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 16
+  object cxLabel1: TcxLabel
+    Left = 8
+    Top = 12
+    Caption = #26087#23494#30721#65306
+    ParentColor = False
+    ParentFont = False
+    Style.Color = clInactiveCaptionText
+    Style.Font.Charset = DEFAULT_CHARSET
+    Style.Font.Color = clMaroon
+    Style.Font.Height = -13
+    Style.Font.Name = 'Tahoma'
+    Style.Font.Style = []
+    Style.IsFontAssigned = True
+  end
+  object TEOldPassword: TcxTextEdit
+    Left = 70
+    Top = 8
+    Properties.EchoMode = eemPassword
+    Properties.MaxLength = 12
+    Properties.ReadOnly = False
+    Style.LookAndFeel.NativeStyle = True
+    StyleDisabled.LookAndFeel.NativeStyle = True
+    StyleFocused.LookAndFeel.NativeStyle = True
+    StyleHot.LookAndFeel.NativeStyle = True
+    TabOrder = 1
+    OnExit = TEOldPasswordExit
+    OnKeyPress = TENewPassword1KeyPress
+    Width = 201
+  end
+  object TENewPassword1: TcxTextEdit
+    Left = 70
+    Top = 38
+    Properties.EchoMode = eemPassword
+    Properties.MaxLength = 12
+    Style.LookAndFeel.NativeStyle = True
+    StyleDisabled.LookAndFeel.NativeStyle = True
+    StyleFocused.LookAndFeel.NativeStyle = True
+    StyleHot.LookAndFeel.NativeStyle = True
+    TabOrder = 2
+    OnExit = TENewPassword1Exit
+    OnKeyPress = TENewPassword1KeyPress
+    Width = 201
+  end
+  object cxLabel2: TcxLabel
+    Left = 8
+    Top = 42
+    Caption = #26032#23494#30721#65306
+    ParentColor = False
+    ParentFont = False
+    Style.Color = clInactiveCaptionText
+    Style.Font.Charset = DEFAULT_CHARSET
+    Style.Font.Color = clMaroon
+    Style.Font.Height = -13
+    Style.Font.Name = 'Tahoma'
+    Style.Font.Style = []
+    Style.IsFontAssigned = True
+  end
+  object cxLabel3: TcxLabel
+    Left = 8
+    Top = 72
+    Caption = #26032#23494#30721#65306
+    ParentColor = False
+    ParentFont = False
+    Style.Color = clInactiveCaptionText
+    Style.Font.Charset = DEFAULT_CHARSET
+    Style.Font.Color = clMaroon
+    Style.Font.Height = -13
+    Style.Font.Name = 'Tahoma'
+    Style.Font.Style = []
+    Style.IsFontAssigned = True
+  end
+  object TENewPassword2: TcxTextEdit
+    Left = 70
+    Top = 68
+    Properties.EchoMode = eemPassword
+    Properties.MaxLength = 12
+    Style.LookAndFeel.NativeStyle = True
+    StyleDisabled.LookAndFeel.NativeStyle = True
+    StyleFocused.LookAndFeel.NativeStyle = True
+    StyleHot.LookAndFeel.NativeStyle = True
+    TabOrder = 5
+    OnExit = TENewPassword2Exit
+    OnKeyPress = TENewPassword1KeyPress
+    Width = 201
+  end
+  object cxButton1: TcxButton
+    Left = 58
+    Top = 103
+    Width = 75
+    Height = 25
+    Caption = #20462'   '#25913
+    LookAndFeel.NativeStyle = True
+    TabOrder = 6
+    OnClick = cxButton1Click
+  end
+  object cxButton2: TcxButton
+    Left = 151
+    Top = 103
+    Width = 75
+    Height = 25
+    Caption = #21462'   '#28040
+    LookAndFeel.NativeStyle = True
+    TabOrder = 7
+    OnClick = cxButton2Click
+  end
+  object ADOQuery1: TADOQuery
+    Connection = SDIAppForm.ADOConnection1
+    Parameters = <>
+    Left = 232
+    Top = 96
+  end
+end

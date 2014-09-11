@@ -1,0 +1,400 @@
+//---------------------------------------------------------------------------
+
+#ifndef XFTJQFormH
+#define XFTJQFormH
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include "cxButtons.hpp"
+#include "cxCalendar.hpp"
+#include "cxContainer.hpp"
+#include "cxControls.hpp"
+#include "cxDropDownEdit.hpp"
+#include "cxEdit.hpp"
+#include "cxGraphics.hpp"
+#include "cxGroupBox.hpp"
+#include "cxLabel.hpp"
+#include "cxLookAndFeelPainters.hpp"
+#include "cxLookAndFeels.hpp"
+#include "cxMaskEdit.hpp"
+#include "cxTextEdit.hpp"
+#include "dxSkinBlack.hpp"
+#include "dxSkinBlue.hpp"
+#include "dxSkinCaramel.hpp"
+#include "dxSkinCoffee.hpp"
+#include "dxSkinDarkRoom.hpp"
+#include "dxSkinDarkSide.hpp"
+#include "dxSkinFoggy.hpp"
+#include "dxSkinGlassOceans.hpp"
+#include "dxSkiniMaginary.hpp"
+#include "dxSkinLilian.hpp"
+#include "dxSkinLiquidSky.hpp"
+#include "dxSkinLondonLiquidSky.hpp"
+#include "dxSkinMcSkin.hpp"
+#include "dxSkinMoneyTwins.hpp"
+#include "dxSkinOffice2007Black.hpp"
+#include "dxSkinOffice2007Blue.hpp"
+#include "dxSkinOffice2007Green.hpp"
+#include "dxSkinOffice2007Pink.hpp"
+#include "dxSkinOffice2007Silver.hpp"
+#include "dxSkinPumpkin.hpp"
+#include "dxSkinsCore.hpp"
+#include "dxSkinsDefaultPainters.hpp"
+#include "dxSkinSeven.hpp"
+#include "dxSkinSharp.hpp"
+#include "dxSkinSilver.hpp"
+#include "dxSkinSpringTime.hpp"
+#include "dxSkinStardust.hpp"
+#include "dxSkinSummer2008.hpp"
+#include "dxSkinValentine.hpp"
+#include "dxSkinXmas2008Blue.hpp"
+#include <Menus.hpp>
+#include "cxPC.hpp"
+#include "dxSkinscxPCPainter.hpp"
+#include <ExtCtrls.hpp>
+#include "cxClasses.hpp"
+#include "cxCustomData.hpp"
+#include "cxData.hpp"
+#include "cxDataStorage.hpp"
+#include "cxDBData.hpp"
+#include "cxFilter.hpp"
+#include "cxGrid.hpp"
+#include "cxGridCustomTableView.hpp"
+#include "cxGridCustomView.hpp"
+#include "cxGridDBTableView.hpp"
+#include "cxGridLevel.hpp"
+#include "cxGridTableView.hpp"
+#include "cxProgressBar.hpp"
+#include "cxStyles.hpp"
+#include "frxClass.hpp"
+#include "frxDBSet.hpp"
+#include <ADODB.hpp>
+#include <DB.hpp>
+#include <Dialogs.hpp>
+
+#include "XFTJALLExportThread.h"
+#include "XFTJGRExportThread.h"
+#include "XFTJGCExportThread.h"
+#include "XFTJZHExportThread.h"
+#include "GlobalParameter.h"
+//---------------------------------------------------------------------------
+class TXFTJQFrm : public TForm
+{
+__published:	// IDE-managed Components
+	TcxPageControl *cxPageControl1;
+	TcxTabSheet *cxTabSheet1;
+	TcxTabSheet *cxTabSheet2;
+	TcxTabSheet *cxTabSheet3;
+	TcxTabSheet *cxTabSheet4;
+	TPanel *Panel1;
+	TcxButton *ExitBTN;
+	TcxGroupBox *cxGroupBox2;
+	TcxGrid *ALLDataGrid;
+	TcxGridDBTableView *ALLDataGridDBTV;
+	TcxGridLevel *ALLDataGridLL;
+	TcxGroupBox *cxGroupBox3;
+	TcxProgressBar *ALLMXExportProgressBar;
+	TcxGroupBox *cxGroupBox4;
+	TPanel *Panel2;
+	TcxButton *ALLMXExportBTN;
+	TcxButton *ALLPreviewBTN;
+	TcxGroupBox *cxGroupBox5;
+	TPanel *Panel3;
+	TcxGroupBox *cxGroupBox6;
+	TcxStyleRepository *cxStyleRepository1;
+	TcxStyle *cxStyle1;
+	TcxStyle *cxStyle2;
+	TcxStyle *cxStyle3;
+	TcxStyle *cxStyle4;
+	TcxStyle *cxStyle5;
+	TcxStyle *cxStyle6;
+	TcxStyle *cxStyle7;
+	TcxStyle *cxStyle8;
+	TcxStyle *cxStyle9;
+	TcxStyle *cxStyle10;
+	TcxStyle *cxStyle11;
+	TcxStyle *cxStyle12;
+	TcxStyle *cxStyle13;
+	TcxStyle *cxStyle14;
+	TcxGridTableViewStyleSheet *GridTableViewStyleSheetDevExpress;
+	TADOQuery *ALLMXADOQuery;
+	TDataSource *ALLMXDataSource;
+	TSaveDialog *ALLSaveDialog;
+	TADOQuery *ALLADOQInThread;
+	TfrxReport *frxALLMXReport;
+	TfrxDBDataset *frxDBDataset1;
+	TcxGroupBox *cxGroupBox10;
+	TLabel *Label9;
+	TLabel *Label10;
+	TcxTextEdit *ABFCSTextEdit;
+	TcxTextEdit *ABFZETextEdit;
+	TcxGroupBox *cxGroupBox9;
+	TLabel *Label7;
+	TLabel *Label8;
+	TcxTextEdit *ALHCSTextEdit;
+	TcxTextEdit *ALHZETextEdit;
+	TcxGroupBox *cxGroupBox8;
+	TLabel *Label4;
+	TLabel *Label6;
+	TcxTextEdit *ASRCSTextEdit;
+	TcxTextEdit *ASRZETextEdit;
+	TcxGroupBox *cxGroupBox1;
+	TLabel *Label2;
+	TLabel *Label3;
+	TcxTextEdit *ANTCSTextEdit;
+	TcxTextEdit *ANTZETextEdit;
+	TcxGroupBox *cxGroupBox11;
+	TLabel *Label1;
+	TLabel *Label5;
+	TcxTextEdit *AZCSTextEdit;
+	TcxTextEdit *AZZETextEdit;
+	TcxGroupBox *cxGroupBox12;
+	TcxGrid *GRDataGrid;
+	TcxGridDBTableView *GRDataGridTV;
+	TcxGridLevel *GRDataGridLL;
+	TcxGroupBox *cxGroupBox13;
+	TcxProgressBar *GRProgressBar;
+	TcxGroupBox *cxGroupBox14;
+	TPanel *Panel4;
+	TcxButton *GRExportBTN;
+	TcxButton *GRPreviewBTN;
+	TcxGroupBox *cxGroupBox15;
+	TPanel *Panel5;
+	TDataSource *GRDataSource;
+	TADOQuery *GRADOQuery;
+	TADOQuery *GRADOQInThread;
+	TSaveDialog *GRSaveDialog;
+	TfrxReport *frxGRMXReport;
+	TfrxDBDataset *frxDBDataset2;
+	TcxGridTableViewStyleSheet *GridTableViewStyleSheetDesert;
+	TcxStyle *cxStyle51;
+	TcxStyle *cxStyle52;
+	TcxStyle *cxStyle53;
+	TcxStyle *cxStyle54;
+	TcxStyle *cxStyle55;
+	TcxStyle *cxStyle56;
+	TcxStyle *cxStyle57;
+	TcxStyle *cxStyle58;
+	TcxStyle *cxStyle59;
+	TcxStyle *cxStyle60;
+	TcxStyle *cxStyle61;
+	TcxGridTableViewStyleSheet *GridTableViewStyleSheetMaple;
+	TcxStyle *cxStyle15;
+	TcxStyle *cxStyle16;
+	TcxStyle *cxStyle17;
+	TcxStyle *cxStyle18;
+	TcxStyle *cxStyle19;
+	TcxStyle *cxStyle20;
+	TcxStyle *cxStyle21;
+	TcxStyle *cxStyle22;
+	TcxStyle *cxStyle23;
+	TcxStyle *cxStyle24;
+	TcxStyle *cxStyle25;
+	TcxGridTableViewStyleSheet *GridTableViewStyleSheetRose;
+	TcxStyle *cxStyle26;
+	TcxStyle *cxStyle27;
+	TcxStyle *cxStyle28;
+	TcxStyle *cxStyle29;
+	TcxStyle *cxStyle30;
+	TcxStyle *cxStyle31;
+	TcxStyle *cxStyle32;
+	TcxStyle *cxStyle33;
+	TcxStyle *cxStyle34;
+	TcxStyle *cxStyle35;
+	TcxStyle *cxStyle36;
+	TcxGridTableViewStyleSheet *GridTableViewStyleSheetUserFormat1;
+	TcxStyle *cxStyle37;
+	TcxStyle *cxStyle38;
+	TcxStyle *cxStyle39;
+	TcxStyle *cxStyle40;
+	TcxStyle *cxStyle41;
+	TcxStyle *cxStyle42;
+	TcxStyle *cxStyle43;
+	TcxStyle *cxStyle44;
+	TcxStyle *cxStyle45;
+	TcxStyle *cxStyle46;
+	TcxStyle *cxStyle47;
+	TLabel *Label11;
+	TLabel *Label12;
+	TcxTextEdit *GRZCSTextEdit;
+	TcxTextEdit *GRZETextEdit;
+	TcxGroupBox *cxGroupBox16;
+	TcxLabel *cxLabel9;
+	TcxDateEdit *BeginDateEdit;
+	TcxLabel *cxLabel10;
+	TcxDateEdit *EndDateEdit;
+	TcxLabel *cxLabel11;
+	TcxComboBox *BMComboBox;
+	TcxLabel *cxLabel12;
+	TcxTextEdit *BHTextEdit;
+	TcxGroupBox *cxGroupBox7;
+	TcxGrid *CCDataGrid;
+	TcxGridDBTableView *CCDataGridTV;
+	TcxGridLevel *CCDataGridLL;
+	TcxGroupBox *cxGroupBox17;
+	TcxProgressBar *CCProgressBar;
+	TcxGroupBox *cxGroupBox18;
+	TPanel *Panel6;
+	TcxButton *CCExportBTN;
+	TcxButton *CCPreviewBTN;
+	TcxGroupBox *cxGroupBox19;
+	TPanel *Panel7;
+	TcxGroupBox *cxGroupBox20;
+	TcxGroupBox *cxGroupBox21;
+	TLabel *Label13;
+	TLabel *Label14;
+	TcxTextEdit *CBFCSTextEdit;
+	TcxTextEdit *CSBFZETextEdit;
+	TcxGroupBox *cxGroupBox22;
+	TLabel *Label15;
+	TLabel *Label16;
+	TcxTextEdit *CLHCSTextEdit;
+	TcxTextEdit *CLHZETextEdit;
+	TcxGroupBox *cxGroupBox23;
+	TLabel *Label17;
+	TLabel *Label18;
+	TcxTextEdit *CSRCSTextEdit;
+	TcxTextEdit *CSRZETextEdit;
+	TcxGroupBox *cxGroupBox24;
+	TLabel *Label19;
+	TLabel *Label20;
+	TcxTextEdit *CNTCSTextEdit;
+	TcxTextEdit *CNTZETextEdit;
+	TcxGroupBox *cxGroupBox25;
+	TLabel *Label21;
+	TLabel *Label22;
+	TcxTextEdit *CZCSTextEdit;
+	TcxTextEdit *CZZETextEdit;
+	TDataSource *CCDataSource;
+	TADOQuery *CCADOQuery;
+	TADOQuery *CCADOQInThread;
+	TSaveDialog *CCSaveDialog;
+	TfrxReport *frxCCReport;
+	TfrxDBDataset *frxDBDataset3;
+	TcxGroupBox *cxGroupBox26;
+	TcxGrid *GRHZDataGrid;
+	TcxGridDBTableView *GRHZDataGridTV;
+	TcxGridLevel *GRHZDataGridLL;
+	TcxGroupBox *cxGroupBox27;
+	TcxProgressBar *GRHZProgressBar;
+	TcxGroupBox *cxGroupBox28;
+	TPanel *Panel8;
+	TLabel *Label23;
+	TLabel *Label24;
+	TcxButton *GRHZExportBTN;
+	TcxButton *GRHZPreviewBTN;
+	TcxTextEdit *GRHZZCSTextEdit;
+	TcxTextEdit *GRHZZETextEdit;
+	TcxGroupBox *cxGroupBox29;
+	TPanel *Panel9;
+	TDataSource *GRHZDataSource;
+	TADOQuery *GRHZADOQuery;
+	TADOQuery *GRHZADOQInThread;
+	TSaveDialog *GRHZSaveDialog;
+	TfrxReport *frxGRHZReport;
+	TfrxDBDataset *frxDBDataset4;
+	TcxGridTableViewStyleSheet *GridTableViewStyleSheetEggplant;
+	TcxStyle *cxStyle48;
+	TcxStyle *cxStyle49;
+	TcxStyle *cxStyle50;
+	TcxStyle *cxStyle62;
+	TcxStyle *cxStyle63;
+	TcxStyle *cxStyle64;
+	TcxStyle *cxStyle65;
+	TcxStyle *cxStyle66;
+	TcxStyle *cxStyle67;
+	TcxStyle *cxStyle68;
+	TcxStyle *cxStyle69;
+	TcxGridTableViewStyleSheet *GridTableViewStyleSheetSpruce;
+	TcxStyle *cxStyle70;
+	TcxStyle *cxStyle71;
+	TcxStyle *cxStyle72;
+	TcxStyle *cxStyle73;
+	TcxStyle *cxStyle74;
+	TcxStyle *cxStyle75;
+	TcxStyle *cxStyle76;
+	TcxStyle *cxStyle77;
+	TcxStyle *cxStyle78;
+	TcxStyle *cxStyle79;
+	TcxStyle *cxStyle80;
+	TcxButton *QueryBTN;
+	TADOQuery *InitADOQuery;
+	TcxGridDBColumn *RQCol;
+	TcxGridDBColumn *ZECol;
+	TcxGridDBColumn *ZCSCol;
+	TcxGridDBColumn *BFZECol;
+	TcxGridDBColumn *BFZCSCol;
+	TcxGridDBColumn *LHZECol;
+	TcxGridDBColumn *LHZCSCol;
+	TcxGridDBColumn *SRZECol;
+	TcxGridDBColumn *SRZCSCol;
+	TcxGridDBColumn *NTZECol;
+	TcxGridDBColumn *NTZCSCol;
+	TADOQuery *ALLTJADOQuery;
+	TADOQuery *AGRTJADOQuery;
+	TcxGridDBColumn *GRRQCol;
+	TcxGridDBColumn *GRXMCol;
+	TcxGridDBColumn *GRBHCol;
+	TcxGridDBColumn *GRXFCSCol;
+	TcxGridDBColumn *GRXFZECol;
+	TcxGridDBColumn *GRBMCol;
+	TADOQuery *CCTJADOQuery;
+	TcxGridDBColumn *CCBHCol;
+	TcxGridDBColumn *CCXMCol;
+	TcxGridDBColumn *CCKHCol;
+	TcxGridDBColumn *CCZECol;
+	TcxGridDBColumn *CCZCSCol;
+	TcxGridDBColumn *CCBFZECol;
+	TcxGridDBColumn *CCBFCSCol;
+	TcxGridDBColumn *CCLHZECol;
+	TcxGridDBColumn *CCLHCSCol;
+	TcxGridDBColumn *CCSRZECol;
+	TcxGridDBColumn *CCSRCSCol;
+	TcxGridDBColumn *CCNTZECol;
+	TcxGridDBColumn *CCNTCSCol;
+	TADOQuery *GRHZTJADOQuery;
+	TcxGridDBColumn *HZBHCol;
+	TcxGridDBColumn *HZXMCol;
+	TcxGridDBColumn *HZKHCol;
+	TcxGridDBColumn *HZXFCSCol;
+	TcxGridDBColumn *HZXFZECol;
+	TcxGridDBColumn *HZBMCol;
+	TcxLabel *cxLabel1;
+	TcxComboBox *CTComboBox;
+	void __fastcall ABFCSTextEditKeyPress(TObject *Sender, wchar_t &Key);
+	void __fastcall BHTextEditKeyPress(TObject *Sender, wchar_t &Key);
+	void __fastcall FormShow(TObject *Sender);
+	void __fastcall QueryBTNClick(TObject *Sender);
+	void __fastcall ALLMXExportBTNClick(TObject *Sender);
+	void __fastcall ExitBTNClick(TObject *Sender);
+	void __fastcall ALLPreviewBTNClick(TObject *Sender);
+	void __fastcall GRExportBTNClick(TObject *Sender);
+	void __fastcall GRPreviewBTNClick(TObject *Sender);
+	void __fastcall CCExportBTNClick(TObject *Sender);
+	void __fastcall CCPreviewBTNClick(TObject *Sender);
+	void __fastcall GRHZExportBTNClick(TObject *Sender);
+	void __fastcall GRHZPreviewBTNClick(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TXFTJQFrm(TComponent* Owner);
+    String BFstarttime;
+    String BFendtime;
+    String LHstarttime;
+    String LHendtime;
+    String SRstarttime;
+    String SRendtime;
+    String NTstarttime;
+    String NTendtime;
+
+    String Beginstr;
+    String Endstr;
+    String BMstr;
+	String BHstr;
+	String CTstr;
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TXFTJQFrm *XFTJQFrm;
+//---------------------------------------------------------------------------
+#endif

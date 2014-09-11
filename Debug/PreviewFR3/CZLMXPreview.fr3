@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="4.9.32" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="40873.9806126968" ReportOptions.Description.Text="" ReportOptions.LastChange="41109.4985573958" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." PropData="044C65667403200203546F7003E0000844617461736574730101063420446174615365743D22667278444244617461736574312220446174615365744E616D653D2266727844424461746173657431220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="182" PaperHeight="257" PaperSize="256" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" Height="75.59058535" Left="0" Top="18.89765" Width="612.28386">
+      <TfrxMemoView Name="Memo2" Left="205.44898" Top="0" Width="200.31509" Height="30.23624" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-21" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="用户操作记录报表"/>
+      <TfrxMemoView Name="Memo3" Left="-0.72449" Top="30.35436" Width="66.14173228" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="起始日期"/>
+      <TfrxMemoView Name="QSRQM" Left="64.76376" Top="30.35436" Width="175.7480315" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo5" Left="-1.22047" Top="53.03154" Width="66.14173228" Height="22.2992126" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="截至日期"/>
+      <TfrxMemoView Name="JZRQM" Left="65.26778" Top="53.03154" Width="174.992125984252" Height="22.2992126" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo7" Left="240.63791" Top="30.23624" Width="68.78738449" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="用户名"/>
+      <TfrxMemoView Name="USERM" Left="309.66945" Top="30.23624" Width="113.38582677" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo9" Left="422.7483" Top="30.45671" Width="77.1023622" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="报表操作员"/>
+      <TfrxMemoView Name="BBCZYM" Left="500.57514" Top="30.23624" Width="113.38582677" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo11" Left="240.39394" Top="52.91342" Width="76.34645669" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="生成日期"/>
+      <TfrxMemoView Name="SCRQM" Left="316.88219" Top="52.91342" Width="297.07095646" Height="22.67716535" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text=""/>
+    </TfrxReportTitle>
+    <TfrxPageFooter Name="PageFooter1" Height="22.67718" Left="0" Top="283.46475" Width="612.28386">
+      <TfrxMemoView Name="Memo1" Left="529.1342" Top="3.77953000000002" Width="75.5906" Height="18.89765" ShowHint="False" HAlign="haRight" Text="[Page#]"/>
+    </TfrxPageFooter>
+    <TfrxMasterData Name="MasterData1" Height="20.78740157" Left="0" Top="200.31509" Width="612.28386" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" RowCount="0">
+      <TfrxMemoView Name="LX" Left="231.55133" Top="0" Width="170.07874015748" Height="20.78740157" ShowHint="False" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Operator" Left="0" Top="0" Width="231.307086614173" Height="20.78740157" ShowHint="False" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="DateTime" Left="401.63018" Top="0" Width="212.40949764" Height="20.78740157" ShowHint="False" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+    </TfrxMasterData>
+    <TfrxPageHeader Name="PageHeader1" Height="20.78740157" Left="0" Top="117.16543" Width="612.28386">
+      <TfrxMemoView Name="Memo12" Left="231.14193" Top="0" Width="170.07885" Height="20.78740157" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="操作类型"/>
+      <TfrxMemoView Name="Memo13" Left="-1.18893" Top="0" Width="232.06299213" Height="20.78740157" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="用户名"/>
+      <TfrxMemoView Name="Memo14" Left="401.44125" Top="0" Width="212.40949764" Height="20.78740157" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="操作时间"/>
+    </TfrxPageHeader>
+  </TfrxReportPage>
+</TfrxReport>
