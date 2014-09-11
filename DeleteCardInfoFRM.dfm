@@ -34,7 +34,7 @@ object DeleteCardInfoFrom: TDeleteCardInfoFrom
     object Label1: TLabel
       Left = 0
       Top = 0
-      Width = 816
+      Width = 528
       Height = 24
       Align = alTop
       Alignment = taCenter
@@ -45,7 +45,6 @@ object DeleteCardInfoFrom: TDeleteCardInfoFrom
       Font.Name = #40657#20307
       Font.Style = []
       ParentFont = False
-      ExplicitWidth = 528
     end
     object DeleteCardInfoBTN: TcxButton
       Left = 0

@@ -74,7 +74,147 @@ void __fastcall TDeleteCardInfoFrom::DeleteCardInfoBTNClick(TObject *Sender)
 	{
 		if(ClearCardInfoProc)
 		{
-			status = ClearCardInfoProc(readcomno, keymode, secnum, key, Delayms);
+		//	status = ClearCardInfoProc(readcomno, keymode, secnum, key, Delayms);
+        	//begin to clear card
+
+            unsigned char sendbuf[26];
+            unsigned char sendbuflen = 26;
+            unsigned char senddelay = Delayms;
+            unsigned char recbuf[140];
+            unsigned char recbuflen;
+            unsigned char pblock = (secnum+1)*4+0;
+            unsigned char pmimamode = 0x60;
+            unsigned char pcommand = 0x02;
+            unsigned char pkeymode = keymode;
+            unsigned char pkey[6];
+            memcpy(pkey,CARDPassword,6);
+            unsigned char comno[5];
+            memcpy(comno,readcomno,5);
+
+            ZeroMemory(sendbuf,26);
+            sendbuf[0] = pblock;//扇区×4+块号
+            sendbuf[1] = pmimamode;//固定为0x60
+            sendbuf[2] = pcommand;//命令字：1为读，2为写
+            sendbuf[3] = pkeymode;
+            sendbuf[4] = pkey[0];
+            sendbuf[5] = pkey[1];
+            sendbuf[6] = pkey[2];
+            sendbuf[7] = pkey[3];
+            sendbuf[8] = pkey[4];
+            sendbuf[9] = pkey[5];
+            status = pacarddllproc(comno,sendbuflen,sendbuf,&recbuflen,recbuf,senddelay);
+            if(status)
+            {
+                ShowMessage("退卡失败，请重试或联系技术人员！");
+                return;
+            }
+
+            pblock = (secnum+1)*4+1;
+            pmimamode = 0x60;
+            pcommand = 0x02;
+            pkeymode = keymode;
+            memcpy(pkey,CARDPassword,6);
+            memcpy(comno,readcomno,5);
+            ZeroMemory(sendbuf,26);
+            sendbuf[0] = pblock;//扇区×4+块号
+            sendbuf[1] = pmimamode;//固定为0x60
+            sendbuf[2] = pcommand;//命令字：1为读，2为写
+            sendbuf[3] = pkeymode;
+            sendbuf[4] = pkey[0];
+            sendbuf[5] = pkey[1];
+            sendbuf[6] = pkey[2];
+            sendbuf[7] = pkey[3];
+            sendbuf[8] = pkey[4];
+            sendbuf[9] = pkey[5];
+            status = pacarddllproc(comno,sendbuflen,sendbuf,&recbuflen,recbuf,senddelay);
+            if(status)
+            {
+                ShowMessage("退卡失败，请重试或联系技术人员！");
+                return;
+            }
+
+            pblock = (secnum+1)*4+2;
+            pmimamode = 0x60;
+            pcommand = 0x02;
+            pkeymode = keymode;
+            memcpy(pkey,CARDPassword,6);
+            memcpy(comno,readcomno,5);
+            ZeroMemory(sendbuf,26);
+            sendbuf[0] = pblock;//扇区×4+块号
+            sendbuf[1] = pmimamode;//固定为0x60
+            sendbuf[2] = pcommand;//命令字：1为读，2为写
+            sendbuf[3] = pkeymode;
+            sendbuf[4] = pkey[0];
+            sendbuf[5] = pkey[1];
+            sendbuf[6] = pkey[2];
+            sendbuf[7] = pkey[3];
+            sendbuf[8] = pkey[4];
+            sendbuf[9] = pkey[5];
+            status = pacarddllproc(comno,sendbuflen,sendbuf,&recbuflen,recbuf,senddelay);
+            if(status)
+            {
+                ShowMessage("退卡失败，请重试或联系技术人员！");
+                return;
+            }
+
+            pblock = (secnum+2)*4+0;
+            pmimamode = 0x60;
+            pcommand = 0x02;
+            pkeymode = keymode;
+            memcpy(pkey,CARDPassword,6);
+            memcpy(comno,readcomno,5);
+            ZeroMemory(sendbuf,26);
+            sendbuf[0] = pblock;//扇区×4+块号
+            sendbuf[1] = pmimamode;//固定为0x60
+            sendbuf[2] = pcommand;//命令字：1为读，2为写
+            sendbuf[3] = pkeymode;
+            sendbuf[4] = pkey[0];
+            sendbuf[5] = pkey[1];
+            sendbuf[6] = pkey[2];
+            sendbuf[7] = pkey[3];
+            sendbuf[8] = pkey[4];
+            sendbuf[9] = pkey[5];
+            pacarddllproc(comno,sendbuflen,sendbuf,&recbuflen,recbuf,senddelay);
+
+            pblock = (secnum+2)*4+1;
+            pmimamode = 0x60;
+            pcommand = 0x02;
+            pkeymode = keymode;
+            memcpy(pkey,CARDPassword,6);
+            memcpy(comno,readcomno,5);
+            ZeroMemory(sendbuf,26);
+            sendbuf[0] = pblock;//扇区×4+块号
+            sendbuf[1] = pmimamode;//固定为0x60
+            sendbuf[2] = pcommand;//命令字：1为读，2为写
+            sendbuf[3] = pkeymode;
+            sendbuf[4] = pkey[0];
+            sendbuf[5] = pkey[1];
+            sendbuf[6] = pkey[2];
+            sendbuf[7] = pkey[3];
+            sendbuf[8] = pkey[4];
+            sendbuf[9] = pkey[5];
+            pacarddllproc(comno,sendbuflen,sendbuf,&recbuflen,recbuf,senddelay);
+
+            pblock = (secnum+2)*4+2;
+            pmimamode = 0x60;
+            pcommand = 0x02;
+            pkeymode = keymode;
+            memcpy(pkey,CARDPassword,6);
+            memcpy(comno,readcomno,5);
+            ZeroMemory(sendbuf,26);
+            sendbuf[0] = pblock;//扇区×4+块号
+            sendbuf[1] = pmimamode;//固定为0x60
+            sendbuf[2] = pcommand;//命令字：1为读，2为写
+            sendbuf[3] = pkeymode;
+            sendbuf[4] = pkey[0];
+            sendbuf[5] = pkey[1];
+            sendbuf[6] = pkey[2];
+            sendbuf[7] = pkey[3];
+            sendbuf[8] = pkey[4];
+            sendbuf[9] = pkey[5];
+            pacarddllproc(comno,sendbuflen,sendbuf,&recbuflen,recbuf,senddelay);
+
+            //end to clear card
 			if(0 == status)
 			{
 				beepofreaddll(readcomno, '10');
